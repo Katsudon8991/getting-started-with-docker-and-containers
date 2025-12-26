@@ -2,6 +2,12 @@ docker volume create pg
 
 # -d 옵션이 없다면? foreground로 동작
 # windows 사용자의 경우 최상위 폴더의 "[필독] 윈도우 사용자분들께.txt"를 꼭 읽어주세요!
+# docker run --name pg --rm \
+#     --memory="512m" --cpus="0.5" \
+#     -v pg:/var/lib/postgresql/data \
+#     -e POSTGRES_PASSWORD=rex postgres
+
+# 18+ 버전부터, 버전별로 data를 저장할 수 있도록 변경되어, /var/lib/postgresql/data 경로가 아닌, /var/lib/postgresql 경로에 볼륨을 지정
 docker run --name pg --rm \
     --memory="512m" --cpus="0.5" \
     -v pg:/var/lib/postgresql/data \
