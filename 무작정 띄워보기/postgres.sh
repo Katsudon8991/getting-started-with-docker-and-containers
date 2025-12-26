@@ -10,7 +10,7 @@ docker volume create pg
 # 18+ 버전부터, 버전별로 data를 저장할 수 있도록 변경되어, /var/lib/postgresql/data 경로가 아닌, /var/lib/postgresql 경로에 볼륨을 지정
 docker run --name pg --rm \
     --memory="512m" --cpus="0.5" \
-    -v pg:/var/lib/postgresql/data \
+    -v pg:/var/lib/postgresql \
     -e POSTGRES_PASSWORD=rex postgres
 
 # 컨테이너들 정보 및 상태 확인
