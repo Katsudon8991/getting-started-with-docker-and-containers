@@ -36,3 +36,6 @@ docker volume rm pg
 docker rm -f pg
 
 docker volume rm pg
+
+# 도커 이미지 삭제
+docker rmi postgres:latest

@@ -19,7 +19,7 @@ docker run --rm -v ~/.aws/credentials:/root/.aws/credentials \
 # 별도의 AWS 관련 설정 없으신 분들은 아래 명령어로 진행
 docker run --rm amazon/aws-cli --version
 
-# entrypoin 수정 가능
+# entrypoint 수정 가능
 docker run --rm -it --entrypoint sh amazon/aws-cli
 
 docker network rm -f run

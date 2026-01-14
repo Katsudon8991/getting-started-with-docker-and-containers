@@ -7,3 +7,9 @@ docker inspect busybox
 docker inspect busybox -f '{{json .State}}'
 
 docker rm -f busybox
+
+# docker container inspect
+# docker network inspect
+# docker image inspect
+
+# docker container run

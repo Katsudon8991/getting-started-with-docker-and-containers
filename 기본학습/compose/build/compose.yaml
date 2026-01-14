@@ -1,6 +1,6 @@
 services:
   web:
-    build:
+    build: # docker build -t web -f dockerfile --build-arg IMAGE_VERSION="3.12-alpine" .
       context: .
       dockerfile: Dockerfile
       args:
